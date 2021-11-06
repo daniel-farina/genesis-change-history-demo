@@ -1,0 +1,125 @@
+GENESIS SETUP
+
+
+####################-------------------------LOCAL MAIN GENESIS ADMINISTRATOR
+INIT
+aliend init alien --chain-id=ufo
+
+#CREATE MAIN_ACCOUNT
+
+aliend keys add mainAccount
+——————————————————
+- name: mainAccount
+  type: local
+  address: alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Avju6He5fB2KCJXim9MAcJBBdKn3DnqPoUBy0HFAGw4N"}'
+  mnemonic: ""
+
+
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+
+prosper attend deposit fall roof shadow tent fame banana misery banana scale scout vacuum wonder expand service use supreme remind dash movie fence library
+
+## ADD MAIN_ACCOUNT  -  1 BILLION TOKENS.  100,000,0000
+
+aliend add-genesis-account alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e 1000000000ualien
+aliend add-genesis-account alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e 1000000000stake,1000000000alien
+
+aliend add-genesis-account alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e 80000000000000umicro
+
+eighty trillion
+
+
+
+COMMIT
+Adding a single account 1 billion tokens
+
+aliend keys add mainAccount
+aliend add-genesis-account alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e 1000000000ualien
+
+
+####################-------------------------VALIDATOR ONE
+
+aliend init alien1 --chain-id=ufo
+
+CREATE ACCOUNT
+aliend keys add validator2
+
+- name: validator1
+  type: local
+  address: alien1nxl5lduvj0m2pk7u0hrpdexrld2rn6avdk82w0
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Ahr58BAtnGvquHw6VqWdWCXLHTCEpyQgGcernilQ8PLd"}'
+  mnemonic: ""
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+season below fame zebra tortoise stool alone thought hand layer pig dust depth snake cinnamon item eager dragon skull morning earn pact egg addict
+
+
+aliend keys add validator1
+
+Generate empty genesis
+aliend init alien --chain-id=ufo
+
+Add funds
+aliend add-genesis-account alien1nxl5lduvj0m2pk7u0hrpdexrld2rn6avdk82w0 100000000ualien
+
+
+Sign gentx
+aliend gentx validator1 100000000ualien --chain-id=ufo --moniker=validator1
+
+
+Genesis transaction written to "/home/alienuser/.alien/config/gentx/gentx-d4c7cd5d0da5c963463aed90f0ca6aff7f42654c.json"
+
+
+
+
+############## VALIDATOR 2
+
+Enter keyring passphrase:
+Re-enter keyring passphrase:
+
+- name: validator2
+  type: local
+  address: alien1wws5gqxaawtp9su2rupx78fkysrrms43dqlz4h
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A4t56TY/53nBcxwL2w+WseIy35Lt5YHqd5MyLUY4WVU9"}'
+  mnemonic: ""
+
+
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+
+fringe offer vault wonder cousin tennis problem nominee proof hurdle short range half digital junior target special very stuff usual feed venue sentence avocado
+
+
+Add funds
+aliend add-genesis-account alien1wws5gqxaawtp9su2rupx78fkysrrms43dqlz4h 100000000ualien
+
+
+Sign gentx
+aliend gentx validator2 100000000ualien --chain-id=ufo --moniker=validator2
+
+
+
+
+
+
+####################-------------------------LOCAL MAIN GENESIS ADMINISTRATOR
+##COLLECT GENTXS
+
+aliend add-genesis-account alien1nxl5lduvj0m2pk7u0hrpdexrld2rn6avdk82w0 1000000000ualien --moniker validator1
+aliend add-genesis-account alien14emueuzvhxcac45aj2zzwn9k37pthh2wlxqku0 1000000000ualien
+
+aliend collect-gentxs
+
+
+##first
+sudo systemctl stop aliend.service
+
+
+#then
+cd ~/.aliend/config/
+rm genesis.json
+wget https://raw.githubusercontent.com/daniel-farina/genesis-change-history-demo/main/config/genesis.json
+sudo systemctl start aliend.service
+gex
