@@ -1,0 +1,719 @@
+{
+  "app_hash": "",
+  "app_state": {
+    "alien": {},
+    "auth": {
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "3",
+          "address": "alien1rx0cnusy776vmue3v2ntc0p04wuwwnqfcq6j6l",
+          "pub_key": {
+            "@type": "/cosmos.crypto.secp256k1.PubKey",
+            "key": "AxhogtQ55HDoHZWxyHgIpJrMTiqCFD+CjvecYlpwJsyl"
+          },
+          "sequence": "1"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "10",
+            "address": "alien1yl6hdjhmkf37639730gffanpzndzdpmhrvutz9",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "transfer",
+          "permissions": [
+            "minter",
+            "burner"
+          ]
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "6",
+            "address": "alien1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3cgrdv3",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "bonded_tokens_pool",
+          "permissions": [
+            "burner",
+            "staking"
+          ]
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "7",
+            "address": "alien1tygms3xhhs3yv487phx3dw4a95jn7t7lvglu69",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "not_bonded_tokens_pool",
+          "permissions": [
+            "burner",
+            "staking"
+          ]
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "0",
+          "address": "alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e",
+          "pub_key": null,
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "2",
+          "address": "alien1wws5gqxaawtp9su2rupx78fkysrrms43dqlz4h",
+          "pub_key": {
+            "@type": "/cosmos.crypto.secp256k1.PubKey",
+            "key": "A4t56TY/53nBcxwL2w+WseIy35Lt5YHqd5MyLUY4WVU9"
+          },
+          "sequence": "1"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "8",
+            "address": "alien10d07y265gmmuvt4z0w9aw880jnsr700jh3e8r4",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "gov",
+          "permissions": [
+            "burner"
+          ]
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "5",
+            "address": "alien1jv65s3grqf6v6jl3dp4t6c9t9rk99cd82vw7ue",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "distribution",
+          "permissions": []
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "account_number": "1",
+          "address": "alien1nxl5lduvj0m2pk7u0hrpdexrld2rn6avdk82w0",
+          "pub_key": {
+            "@type": "/cosmos.crypto.secp256k1.PubKey",
+            "key": "Ahr58BAtnGvquHw6VqWdWCXLHTCEpyQgGcernilQ8PLd"
+          },
+          "sequence": "1"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "9",
+            "address": "alien1m3h30wlvsf8llruxtpukdvsy0km2kum89zd6jx",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "mint",
+          "permissions": [
+            "minter"
+          ]
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+          "base_account": {
+            "account_number": "4",
+            "address": "alien17xpfvakm2amg962yls6f84z3kell8c5la2fz7m",
+            "pub_key": null,
+            "sequence": "0"
+          },
+          "name": "fee_collector",
+          "permissions": []
+        }
+      ],
+      "params": {
+        "max_memo_characters": "256",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10"
+      }
+    },
+    "bank": {
+      "balances": [
+        {
+          "address": "alien1fl48vsnmsdzcv85q5d2q4z5ajdha8yu3cgrdv3",
+          "coins": [
+            {
+              "amount": "300000000",
+              "denom": "ualien"
+            }
+          ]
+        },
+        {
+          "address": "alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e",
+          "coins": [
+            {
+              "amount": "1000000000",
+              "denom": "ualien"
+            }
+          ]
+        },
+        {
+          "address": "alien1jv65s3grqf6v6jl3dp4t6c9t9rk99cd82vw7ue",
+          "coins": [
+            {
+              "amount": "3380",
+              "denom": "ualien"
+            }
+          ]
+        }
+      ],
+      "denom_metadata": [],
+      "params": {
+        "default_send_enabled": true,
+        "send_enabled": []
+      },
+      "supply": [
+        {
+          "amount": "1300003380",
+          "denom": "ualien"
+        }
+      ]
+    },
+    "capability": {
+      "index": "2",
+      "owners": [
+        {
+          "index": "1",
+          "index_owners": {
+            "owners": [
+              {
+                "module": "ibc",
+                "name": "ports/transfer"
+              },
+              {
+                "module": "transfer",
+                "name": "ports/transfer"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "crisis": {
+      "constant_fee": {
+        "amount": "1000",
+        "denom": "ualien"
+      }
+    },
+    "distribution": {
+      "delegator_starting_infos": [
+        {
+          "delegator_address": "alien1rx0cnusy776vmue3v2ntc0p04wuwwnqfcq6j6l",
+          "starting_info": {
+            "height": "0",
+            "previous_period": "1",
+            "stake": "100000000.000000000000000000"
+          },
+          "validator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0"
+        },
+        {
+          "delegator_address": "alien1wws5gqxaawtp9su2rupx78fkysrrms43dqlz4h",
+          "starting_info": {
+            "height": "0",
+            "previous_period": "1",
+            "stake": "100000000.000000000000000000"
+          },
+          "validator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8"
+        },
+        {
+          "delegator_address": "alien1nxl5lduvj0m2pk7u0hrpdexrld2rn6avdk82w0",
+          "starting_info": {
+            "height": "0",
+            "previous_period": "1",
+            "stake": "100000000.000000000000000000"
+          },
+          "validator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll"
+        }
+      ],
+      "delegator_withdraw_infos": [],
+      "fee_pool": {
+        "community_pool": [
+          {
+            "amount": "67.600000000000003507",
+            "denom": "ualien"
+          }
+        ]
+      },
+      "outstanding_rewards": [
+        {
+          "outstanding_rewards": [
+            {
+              "amount": "1102.399999999999998831",
+              "denom": "ualien"
+            }
+          ],
+          "validator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0"
+        },
+        {
+          "outstanding_rewards": [
+            {
+              "amount": "1102.399999999999998831",
+              "denom": "ualien"
+            }
+          ],
+          "validator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8"
+        },
+        {
+          "outstanding_rewards": [
+            {
+              "amount": "1107.599999999999998831",
+              "denom": "ualien"
+            }
+          ],
+          "validator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll"
+        }
+      ],
+      "params": {
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "community_tax": "0.020000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "previous_proposer": "alienvalcons1x5suvn9sevw0vp5mz9jch2x84z3mzy5a27mn2y",
+      "validator_accumulated_commissions": [
+        {
+          "accumulated": {
+            "commission": [
+              {
+                "amount": "110.239999999999999870",
+                "denom": "ualien"
+              }
+            ]
+          },
+          "validator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0"
+        },
+        {
+          "accumulated": {
+            "commission": [
+              {
+                "amount": "110.239999999999999870",
+                "denom": "ualien"
+              }
+            ]
+          },
+          "validator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8"
+        },
+        {
+          "accumulated": {
+            "commission": [
+              {
+                "amount": "110.759999999999999870",
+                "denom": "ualien"
+              }
+            ]
+          },
+          "validator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll"
+        }
+      ],
+      "validator_current_rewards": [
+        {
+          "rewards": {
+            "period": "2",
+            "rewards": [
+              {
+                "amount": "992.159999999999998961",
+                "denom": "ualien"
+              }
+            ]
+          },
+          "validator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0"
+        },
+        {
+          "rewards": {
+            "period": "2",
+            "rewards": [
+              {
+                "amount": "992.159999999999998961",
+                "denom": "ualien"
+              }
+            ]
+          },
+          "validator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8"
+        },
+        {
+          "rewards": {
+            "period": "2",
+            "rewards": [
+              {
+                "amount": "996.839999999999998961",
+                "denom": "ualien"
+              }
+            ]
+          },
+          "validator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll"
+        }
+      ],
+      "validator_historical_rewards": [
+        {
+          "period": "1",
+          "rewards": {
+            "cumulative_reward_ratio": [],
+            "reference_count": 2
+          },
+          "validator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0"
+        },
+        {
+          "period": "1",
+          "rewards": {
+            "cumulative_reward_ratio": [],
+            "reference_count": 2
+          },
+          "validator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8"
+        },
+        {
+          "period": "1",
+          "rewards": {
+            "cumulative_reward_ratio": [],
+            "reference_count": 2
+          },
+          "validator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll"
+        }
+      ],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "evidence": []
+    },
+    "feegrant": {
+      "allowances": []
+    },
+    "genutil": {
+      "gen_txs": []
+    },
+    "gov": {
+      "deposit_params": {
+        "max_deposit_period": "172800s",
+        "min_deposit": [
+          {
+            "amount": "10000000",
+            "denom": "ualien"
+          }
+        ]
+      },
+      "deposits": [],
+      "proposals": [],
+      "starting_proposal_id": "1",
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      },
+      "votes": [],
+      "voting_params": {
+        "voting_period": "172800s"
+      }
+    },
+    "ibc": {
+      "channel_genesis": {
+        "ack_sequences": [],
+        "acknowledgements": [],
+        "channels": [],
+        "commitments": [],
+        "next_channel_sequence": "0",
+        "receipts": [],
+        "recv_sequences": [],
+        "send_sequences": []
+      },
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "create_localhost": false,
+        "next_client_sequence": "0",
+        "params": {
+          "allowed_clients": [
+            "06-solomachine",
+            "07-tendermint"
+          ]
+        }
+      },
+      "connection_genesis": {
+        "client_connection_paths": [],
+        "connections": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
+        }
+      }
+    },
+    "mint": {
+      "minter": {
+        "annual_provisions": "169002718.019065496499121578",
+        "inflation": "0.130001755379367657"
+      },
+      "params": {
+        "blocks_per_year": "6311520",
+        "goal_bonded": "0.670000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "inflation_rate_change": "0.130000000000000000",
+        "mint_denom": "ualien"
+      }
+    },
+    "params": null,
+    "slashing": {
+      "missed_blocks": [
+        {
+          "address": "alienvalcons1x5suvn9sevw0vp5mz9jch2x84z3mzy5a27mn2y",
+          "missed_blocks": []
+        },
+        {
+          "address": "alienvalcons128gjuw9rgnq9xsah369h9cx87jzp3254m0pmvj",
+          "missed_blocks": []
+        },
+        {
+          "address": "alienvalcons1a68370dxfh6s9dt5aery9nexd66m6xc4yact62",
+          "missed_blocks": []
+        }
+      ],
+      "params": {
+        "downtime_jail_duration": "600s",
+        "min_signed_per_window": "0.500000000000000000",
+        "signed_blocks_window": "100",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": [
+        {
+          "address": "alienvalcons1x5suvn9sevw0vp5mz9jch2x84z3mzy5a27mn2y",
+          "validator_signing_info": {
+            "address": "alienvalcons1x5suvn9sevw0vp5mz9jch2x84z3mzy5a27mn2y",
+            "index_offset": "129",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "alienvalcons128gjuw9rgnq9xsah369h9cx87jzp3254m0pmvj",
+          "validator_signing_info": {
+            "address": "alienvalcons128gjuw9rgnq9xsah369h9cx87jzp3254m0pmvj",
+            "index_offset": "129",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        },
+        {
+          "address": "alienvalcons1a68370dxfh6s9dt5aery9nexd66m6xc4yact62",
+          "validator_signing_info": {
+            "address": "alienvalcons1a68370dxfh6s9dt5aery9nexd66m6xc4yact62",
+            "index_offset": "129",
+            "jailed_until": "1970-01-01T00:00:00Z",
+            "missed_blocks_counter": "0",
+            "start_height": "0",
+            "tombstoned": false
+          }
+        }
+      ]
+    },
+    "staking": {
+      "delegations": [
+        {
+          "delegator_address": "alien1rx0cnusy776vmue3v2ntc0p04wuwwnqfcq6j6l",
+          "shares": "100000000.000000000000000000",
+          "validator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0"
+        },
+        {
+          "delegator_address": "alien1wws5gqxaawtp9su2rupx78fkysrrms43dqlz4h",
+          "shares": "100000000.000000000000000000",
+          "validator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8"
+        },
+        {
+          "delegator_address": "alien1nxl5lduvj0m2pk7u0hrpdexrld2rn6avdk82w0",
+          "shares": "100000000.000000000000000000",
+          "validator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll"
+        }
+      ],
+      "exported": true,
+      "last_total_power": "300",
+      "last_validator_powers": [
+        {
+          "address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0",
+          "power": "100"
+        },
+        {
+          "address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8",
+          "power": "100"
+        },
+        {
+          "address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll",
+          "power": "100"
+        }
+      ],
+      "params": {
+        "bond_denom": "ualien",
+        "historical_entries": 10000,
+        "max_entries": 7,
+        "max_validators": 100,
+        "unbonding_time": "1814400s"
+      },
+      "redelegations": [],
+      "unbonding_delegations": [],
+      "validators": [
+        {
+          "commission": {
+            "commission_rates": {
+              "max_change_rate": "0.010000000000000000",
+              "max_rate": "0.200000000000000000",
+              "rate": "0.100000000000000000"
+            },
+            "update_time": "2021-11-06T01:14:15.545437Z"
+          },
+          "consensus_pubkey": {
+            "@type": "/cosmos.crypto.ed25519.PubKey",
+            "key": "PjfcaUCRiJI/QjgzyodtZHDKDQMUH10THGG5C3Ml7ec="
+          },
+          "delegator_shares": "100000000.000000000000000000",
+          "description": {
+            "details": "",
+            "identity": "",
+            "moniker": "validator3",
+            "security_contact": "",
+            "website": ""
+          },
+          "jailed": false,
+          "min_self_delegation": "1",
+          "operator_address": "alienvaloper1rx0cnusy776vmue3v2ntc0p04wuwwnqf2lnzt0",
+          "status": "BOND_STATUS_BONDED",
+          "tokens": "100000000",
+          "unbonding_height": "0",
+          "unbonding_time": "1970-01-01T00:00:00Z"
+        },
+        {
+          "commission": {
+            "commission_rates": {
+              "max_change_rate": "0.010000000000000000",
+              "max_rate": "0.200000000000000000",
+              "rate": "0.100000000000000000"
+            },
+            "update_time": "2021-11-06T01:14:15.545437Z"
+          },
+          "consensus_pubkey": {
+            "@type": "/cosmos.crypto.ed25519.PubKey",
+            "key": "HC7UTOpyjoFBaVTMEJWniYy4amwD36d6aA5p2ixmFAI="
+          },
+          "delegator_shares": "100000000.000000000000000000",
+          "description": {
+            "details": "",
+            "identity": "",
+            "moniker": "validator2",
+            "security_contact": "",
+            "website": ""
+          },
+          "jailed": false,
+          "min_self_delegation": "1",
+          "operator_address": "alienvaloper1wws5gqxaawtp9su2rupx78fkysrrms43llkjy8",
+          "status": "BOND_STATUS_BONDED",
+          "tokens": "100000000",
+          "unbonding_height": "0",
+          "unbonding_time": "1970-01-01T00:00:00Z"
+        },
+        {
+          "commission": {
+            "commission_rates": {
+              "max_change_rate": "0.010000000000000000",
+              "max_rate": "0.200000000000000000",
+              "rate": "0.100000000000000000"
+            },
+            "update_time": "2021-11-06T01:14:15.545437Z"
+          },
+          "consensus_pubkey": {
+            "@type": "/cosmos.crypto.ed25519.PubKey",
+            "key": "97EMXRbLKvCxydtsD1k+5vOjnnnQ7Kp18YEyjoovakw="
+          },
+          "delegator_shares": "100000000.000000000000000000",
+          "description": {
+            "details": "",
+            "identity": "",
+            "moniker": "validator1",
+            "security_contact": "",
+            "website": ""
+          },
+          "jailed": false,
+          "min_self_delegation": "1",
+          "operator_address": "alienvaloper1nxl5lduvj0m2pk7u0hrpdexrld2rn6avlfw6ll",
+          "status": "BOND_STATUS_BONDED",
+          "tokens": "100000000",
+          "unbonding_height": "0",
+          "unbonding_time": "1970-01-01T00:00:00Z"
+        }
+      ]
+    },
+    "transfer": {
+      "denom_traces": [],
+      "params": {
+        "receive_enabled": true,
+        "send_enabled": true
+      },
+      "port_id": "transfer"
+    },
+    "upgrade": {},
+    "vesting": {}
+  },
+  "chain_id": "ufo",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age_duration": "172800000000000",
+      "max_age_num_blocks": "100000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {}
+  },
+  "genesis_time": "2021-11-06T01:14:15.545437Z",
+  "initial_height": "131",
+  "validators": [
+    {
+      "address": "51D12E38A344C05343B78E8B72E0C7F48418AA95",
+      "name": "validator3",
+      "power": "100",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "PjfcaUCRiJI/QjgzyodtZHDKDQMUH10THGG5C3Ml7ec="
+      }
+    },
+    {
+      "address": "3521C64CB0CB1CF6069B11658BA8C7A8A3B1129D",
+      "name": "validator2",
+      "power": "100",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "HC7UTOpyjoFBaVTMEJWniYy4amwD36d6aA5p2ixmFAI="
+      }
+    },
+    {
+      "address": "EE8F1F3DA64DF502B574EE4642CF266EB5BD1B15",
+      "name": "validator1",
+      "power": "100",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "97EMXRbLKvCxydtsD1k+5vOjnnnQ7Kp18YEyjoovakw="
+      }
+    }
+  ]
+}
