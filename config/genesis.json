@@ -112,12 +112,6 @@
       "index": "1",
       "owners": []
     },
-    "crisis": {
-      "constant_fee": {
-        "denom": "ualien",
-        "amount": "1000"
-      }
-    },
     "distribution": {
       "params": {
         "community_tax": "0.020000000000000000",
