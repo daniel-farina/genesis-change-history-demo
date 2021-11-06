@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2021-11-06T00:47:40.363142Z",
+  "genesis_time": "2021-11-06T01:14:15.545437Z",
   "chain_id": "ufo",
   "initial_height": "1",
   "consensus_params": {
@@ -31,14 +31,32 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "bank": {
       "params": {
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [],
+      "balances": [
+        {
+          "address": "alien1tywl84n3r45m7v0c79mrljs6xw4zk0kjdhnr9e",
+          "coins": [
+            {
+              "denom": "ualien",
+              "amount": "1000000000"
+            }
+          ]
+        }
+      ],
       "supply": [],
       "denom_metadata": []
     },
@@ -48,7 +66,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "stake",
+        "denom": "ualien",
         "amount": "1000"
       }
     },
@@ -88,7 +106,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "stake",
+            "denom": "ualien",
             "amount": "10000000"
           }
         ],
@@ -142,7 +160,7 @@
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "stake",
+        "mint_denom": "ualien",
         "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
         "inflation_min": "0.070000000000000000",
@@ -168,7 +186,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "stake"
+        "bond_denom": "ualien"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
